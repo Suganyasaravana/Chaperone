@@ -1,0 +1,19 @@
+textarea,select,input[type=text],[type=date],[type=password],[type=number],[type=mobileno],[type=email],[type=percentage]{
+width:80%;
+margin:8px;
+border-radius:5px;
+border-color:honeydew; 
+border-width:thin;
+border-style:solid;
+padding:11px;
+}
+.form{
+       background-color: black;
+       border-radius:6px;
+       opacity:.8;
+       color:white;
+       width:30%;
+       height:60%;
+       margin:10px;
+       padding: 15px;
+     }

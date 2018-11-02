@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="formin.css">
+  <link rel="stylesheet" type="text/css" href="submit.css">
+  <style type="text/css">
+   body{
+      font-family: Trebuchet MS;
+      font-size:17px;
+      background:url("bg.jpg");
+      background-size:120%;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+     }
+     .form{ 
+       width:50%;
+       
+     }
+  </style>
+  <script type="text/javascript">
+    function validate(){
+    x=document.login.pwd.value;
+    y=document.login.rpwd.value;
+    if(x != y){
+    alert("Password does not match");
+    return false;
+}
+}
+</script>
+</head>
+<body>
+  <br><br>
+  <header style="font-size:30px;"><center><b>SignUp</b></center></header><br>
+   <center>
+    <div class="form">
+  <table>
+    <tr><td></td><td><form name="login" action="" onsubmit="return validate()"></td></tr>
+      <tr><td><b>Name</b></td><td><input type="text" name="sname" placeholder="Name" required></td></tr>
+      <tr><td><b>E-mail</b></td><td><input type="email" name="mail" placeholder="Mail ID" required></td></tr>
+      <tr><td><b>Gender</b></td><td><select><option selected>Male</option><option>Female</option><option>Other</option></select></td></tr>
+      <tr><td><b>Contact No</b></td><td><input type="mobileno" name="MobileNo" placeholder="contact No" required</td></tr>
+      <tr><td><b>Interest</b></td><td><select><option selected>Embroidery</option><option>Fashion Stylist</option><option>Jewellery Making</option><option>Painting</option><option>Photography</option><option>Pot Work</option><option>Sculptures</option><option>Toy Design</option></select></td></tr>
+       <tr><td><b>Password</b></td><td><input type="Password" name="pwd" placeholder="Password" required></td></tr>
+      <tr><td><b>Re-Type Password</b></td><td><input type="Password" name="rpwd" placeholder="Re-type Password " required></td></tr>
+      <tr><td></td><td><input type="submit" value="Register"></td></tr>
+      <tr><td></td><td></form></td></tr>
+  </table>
+</div></center></form>
+</body>
+</html>
